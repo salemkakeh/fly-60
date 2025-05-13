@@ -1,0 +1,134 @@
+main .container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .image-text  {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+main .image-text img {
+  width: 500px;
+  filter: brightness(110%) contrast(120%);
+}
+main .image-text .text {
+  display: flex;
+  flex-direction: column;
+}
+main .image-text .text  h2:first-child {
+  display: flex;
+  gap: 30px;
+}
+main .image-text .text  h2:last-child span {
+  display: block;
+  text-align: center;
+}
+main .image-text .text  h2 strong {
+  color: var(--bg-color);
+}
+
+main .container .form-add {
+  flex: 1;
+}
+main .container .form-add h1 {
+  margin-bottom: 20px;
+}
+main .container .form-add form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .container .form-add form .box {
+  display: flex;
+  gap: 10px;
+}
+main .container .form-add form .box .box-input {
+  flex: 1;
+}
+main .container .form-add form .box .box-input input {
+  display: block;
+  width: 100%;
+  height: 38px;
+  background-color: #FFF;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 16px;
+  
+}
+main .container .form-add form .box .box-input input:focus,
+main .container .form-add form .box .box-input input:valid {
+  border: 2px solid var(--bg-color);
+}
+main .container .form-add form > button {
+  background-color: var(--bg-color);
+  border: none;
+  padding: 11px 0;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 20px;
+  border-radius: 4px;
+  color: #FFF;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  transition-property: transform;
+  transition-duration: .2s;
+}
+main .container .form-add form > button:hover {
+  transform: scale(1.02);
+} 
+
+@media (max-width: 1200px) {
+  main .container {
+    flex-direction: column-reverse;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+  }
+  main .image-text {
+    margin-bottom: 30px;
+    align-items: flex-start;
+    width: 100%;
+  }
+  main .image-text img {
+    display: none;
+  }
+
+  main .image-text .text  h2:last-child span {
+
+    text-align: start;
+}
+}
+
+
+@media (max-width: 576px) {
+main .container .form-add h1 {
+  text-align: center;
+}
+    main .image-text   {
+      align-items: center;
+    }
+  main .image-text .text  h2:first-child  {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+    main .image-text .text  h2:last-child span  {
+      text-align: center;
+    }
+  main .container .form-add {
+    width: 100%;
+  }
+main .container .form-add form .box {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 100%;
+}
+}

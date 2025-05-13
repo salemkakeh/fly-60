@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fly 60</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+
+  <!-- box icons library -->
+  <link rel="stylesheet" href="boxicons/css/boxicons.min.css" />
+
+  <link rel="stylesheet" href="css/global.css">
+
+  <link rel="stylesheet" href="css/footer.css">
+
+  <link rel="stylesheet" href="css/header.css">
+
+  <link rel="stylesheet" href="css/add.css">
+
+
+<body>
+
+  <header>
+    <div class="container">
+
+      <nav class="nav-li">
+        <li><a href="regester.html">تسجيل دخول</a></li>
+        <li><a href="book.html">حجوزاتي</a></li>
+        <li><a href="../index.html">الرحلات</a></li>
+        <li><a href="flights.html">العروض</a></li>
+      </nav>
+      <input type="checkbox" id="list-2" checked>
+      <label for="list-2" class="menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <aside>
+        <li><a href="regester.html">تسجيل دخول</a></li>
+        <li><a href="book.html">حجوزاتي</a></li>
+        <li><a href="index.html">الرحلات</a></li>
+        <li><a href="#">العروض</a></li>
+      </aside>
+      <img src="SVG/logo.svg" width="100px" alt="">
+    </div>
+  </header>
+
+
+
+  <main>
+    <div class="container">
+
+      <div class="form-add">
+        <h1>
+          نموذج حجز رحلة طيران
+        </h1>
+        <form action="" autocomplete="off">
+
+          <div class="box">
+            <div class="box-input">
+              <label for="full-name">الاسم الكامل</label>
+              <input type="text" name="full-name" id="full-name" autocomplete="off" required>
+            </div>
+            <div class="box-input">
+              <label for="pasport-number">رقم الجواز</label>
+              <input type="text" name="pasport-number" id="pasport-number" required>
+            </div>
+
+          </div>
+
+          <div class="box">
+            <div class="box-input">
+              <label for="date">تاريخ الميلاد</label>
+              <input type="date" name="date" id="date" required>
+            </div>
+            <div class="box-input">
+              <label for="departure">تاريخ المغادرة</label>
+              <input type="date" id="departure" required>
+            </div>
+            <div class="box-input">
+              <label for="return">تاريخ العودة</label>
+              <input type="date" name="return" id="return" required>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-input">
+              <label for="Destination1">
+                الوجهة
+              </label>
+              <input list="Destination" id="Destination1" required>
+              <datalist id="Destination">
+                <option value="دبي"></option>
+                <option value="اسطنبول"></option>
+              </datalist>
+            </div>
+            <div class="box-input">
+              <label for="sell1">
+                خيارات الدفع
+              </label>
+              <input list="sell" id="sell1" required>
+              <datalist id="sell">
+                <option value="كاش"></option>
+                <option value="دفع بنكي"></option>
+              </datalist>
+            </div>
+            <div class="box-input">
+              <label for="deg">
+                الدرجة
+              </label>
+              <input list="degree" id="deg" required>
+              <datalist id="degree">
+                <option value="اقتصادي"></option>
+                <option value="VIP"></option>
+              </datalist>
+            </div>
+          </div>
+          <button type="submit">تأكيد الحجز</button>
+        </form>
+      </div>
+
+
+
+
+      <div class="image-text">
+        <img src="image/pasport.png" alt="image">
+        <div class="text">
+          <h2>
+            <span>
+              شركة الطيران :
+              <strong>
+                اطلس
+              </strong>
+            </span>
+            <span>
+              رقم الرحلة :
+              <strong>
+                255
+              </strong>
+            </span>
+          </h2>
+          <h2>
+            <span>
+              الحد الأقصى للوزن :
+              <strong>
+                70kg
+              </strong>
+            </span>
+            <span>
+              الرسوم الإضافية :
+              <strong>
+                100%
+              </strong>
+            </span>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <div class="col-1">
+          <h1>اتصل بنا </h1>
+          <div class="icon">
+            <a href="#"><i class='bx bxl-facebook-circle '> فيس بوك</i></a>
+            <a href="#"><i class='bx bxl-whatsapp'> واتس اب</i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'> انستغرام </i></a>
+          </div>
+        </div>
+        <div class="col-1">
+          <h1>دليل الموقع</h1>
+          <ul class="list-footer">
+            <li><a href="pages/login.html">تسجيل دخول</a></li>
+            <li><a href="../pages/book.html">حجوزاتي</a></li>
+            <li><a href="../pages/flights.html">الرحلات</a></li>
+            <li><a href="../pages/offers.html">العروض</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+      <div class="footer-logo">
+        <img src="SVG/logo.svg" alt="الشعار">
+      </div>
+
+    </div>
+    <div class="footer-copy">
+      <p> جميع الحقوق محفوظة &copy; 2025</p>
+
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

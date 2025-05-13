@@ -1,0 +1,426 @@
+/*start login */
+
+.logo {
+  width: 200px;
+  position: absolute;
+  left: 0;
+  margin: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+form {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.166);
+  padding: 40px;
+  overflow: hidden;
+}
+form::after {
+  position: absolute;
+  content: "";
+  inset: 10px;
+  background-color: #fff;
+  z-index: -1;
+  border-radius: 10px;
+}
+form::before {
+  position: absolute;
+  content: "";
+  inset: -150px;
+  top: 50%;
+  background-color: var(--bg-color);
+  z-index: -2;
+  animation-name: ROTATE;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: center top;
+}
+
+@keyframes ROTATE {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.address {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.address h2 {
+  font-weight: 400;
+  font-size: 30px;
+}
+.address p {
+  font-size: 12px;
+}
+
+.box-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.box-input label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.box-input input {
+  border-radius: 10px;
+  height: 36px;
+  outline-color: var(--bg-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 0 10px;
+}
+
+.submit {
+  width: 100%;
+  margin-top: 40px;
+  background-color: #fff;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--bg-color);
+  padding: 3px 0;
+}
+.submit:hover {
+  opacity: 80%;
+}
+
+.btn {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 90%;
+  left: 42%;
+}
+.btn a {
+  text-decoration: none;
+  border: 3px solid var(--bg-color);
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  padding: 2px;
+  font-size: 15px;
+  border-radius: 20px;
+  color: black;
+}
+.btn a:hover {
+  background-color: var(--bg-color);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn p {
+  font-size: 20px;
+}
+
+/* end login */
+
+/* start main */
+
+main {
+  height: calc(100vh - 80px );
+  display: flex;
+  align-items: center;
+  background-image: url(../image/123123.jpg);
+  background-size: cover;
+  background-position:  center;
+  position: relative;
+}
+main::after {
+  position: absolute;
+  content: '';
+  inset: 0;
+  background-color: #00000042;
+  z-index: -1;
+}
+
+main img {
+  width: 500px;
+}
+
+main .text h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  word-spacing: 7px;
+  color: #fff;
+}
+
+main .text p {
+  font-size: 1rem;
+  opacity: 70%;
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main img {
+    width: 60vw;
+  }
+}
+
+/* end main */
+
+
+/* nothing */
+/* start nothing */
+
+.nothing {
+  height:100vh;
+  background-color: rgb(192, 224, 252);
+
+}
+.nothing h1{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+background-color: #000f39;
+color: #fff;
+width: 100vw;
+text-align: center;
+height: 100px;
+padding: 20px;
+font-size: 30px;
+}
+
+/* end nothing */
+
+/* start sec-flights */
+
+
+
+.sec-flights .container .text--sec1{
+  text-align: center;
+  padding:40px ;
+  font-size: 30px;
+}
+
+.sec-flights .container .cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+
+.sec-flights .container .cards .card{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  
+}
+
+
+@media (max-width: 768px) {
+  
+.sec-flights .container .cards .card{ 
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+}
+.sec-flights .container .cards .card img{
+  transition: transform 0.3s ease; 
+}
+.sec-flights .container .cards .card img:hover{
+  transform: scale(1.1);
+}
+
+.sec-flights .container .cards .card  h1{
+  font-size: 2rem;
+  color:#000F39;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.sec-flights .container .cards .card  p{
+  font-size: 15px;
+  line-height: 25px;
+  padding:0 10px;
+}
+
+.sec-flights .container .cards .card .butt{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding:5px;
+}
+.sec-flights .container .cards .card .butt span{
+  color:red;
+  font-size: 20px;
+  padding-right:5px;
+
+}
+
+.sec-flights .container .cards .card .butt a{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 7px;
+  border: none;
+  background-color:#000F39;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer; 
+  text-decoration: none;
+  
+}
+.sec-flights .container .cards .card .butt a:hover{
+  background-color:#000f39d2;
+}
+.sec-flights .container button{
+  display:inline-block;
+  width: 100px;
+  padding: 5px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 7px;
+  border: none;
+  background-color:#000F39;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+.sec-flights .container button:hover{
+  background-color:#000f39d2;
+}
+
+
+
+/* end sec-flights */
+
+/* start sec-2 */
+
+.sec-2 {
+  padding: 10px;
+  background-color: var(--bg-color);
+  margin-top: 50px;
+  overflow: hidden; 
+
+}
+
+.text-fly h1 { 
+  display: inline-block;
+  transform: translateX(100vw); 
+  animation: scroll-text 10s linear infinite both reverse;
+  white-space: nowrap;
+}
+.sec-2 .text-fly h1 span{
+  color: white;
+}
+
+@keyframes scroll-text {
+  from {
+      transform: translateX(100vw);
+  }
+  to {
+      transform: translateX(-100vw);
+  }
+}
+
+
+/* end sec-2 */
+
+/* start sec-3 */
+
+.sec-3 .container .cards .card .butt .price{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+} 
+.sec-3 .container .cards .card .butt .price p{
+  font-size: 20px;
+  padding: 5px;
+  color: rgb(10, 180, 10);
+
+}
+.sec-3 .container .cards .card .butt .price span{
+  text-decoration-line: line-through;
+  
+}
+
+
+/* end sec-3 */
+
+/* start sec-4 */
+
+.sec-flights .container .cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.sec-flights .container .cards .card{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
+  justify-content: space-around;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  
+}
+.sec-4 .container .cards .card .butt .price{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+} 
+.sec-4 .container .cards .card .butt .price p{
+  font-size: 20px;
+  padding: 5px;
+  color: rgb(10, 180, 10);
+
+}
+.sec-4 .container .cards .card .butt .price span{
+  text-decoration-line: line-through;
+  
+}
+
+/* end sec-4 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

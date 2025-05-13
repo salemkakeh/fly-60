@@ -1,0 +1,158 @@
+
+/* start header */
+
+body > header {
+  position: sticky;
+  top: 0;
+  z-index: 1111;
+  background-color: #000F39;
+}
+
+header .container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container > nav {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+header .container > nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  display: inline-block;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.526);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+header .container > nav li {
+  list-style: none;
+}
+#list-2 {
+  display: none;
+}
+header .container > nav li:nth-child(1) {
+  text-align: center;
+}
+header .container nav li:nth-child(1) a:hover {
+  background-color: var(--bg-color);
+  color: #fff;
+}
+header .container > nav a:hover {
+  color: var(--bg-color);
+}
+header .container .menu-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+  cursor: pointer;
+}
+header .container .menu-button span {
+  width: 100%;
+  height: 5px;
+  border-radius: 4px;
+  background-color: white;
+}
+header .container aside {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  height: calc(100vh - 80px);
+  width: 200px;
+  transition: right 1s;
+  display: flex;
+  border-left: 1px solid var(--bg-color);
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  padding-top: 60px;
+  background-color: #fff;
+  z-index: 11324234;
+}
+#list-2:checked ~ aside {
+  right: -200px;
+}
+
+aside li {
+  list-style: none;
+}
+aside li a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border: 1px solid var(--bg-color);
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: black;
+}
+
+aside li a:hover {
+  background-color: var(--bg-color);
+  color: #fff;
+}
+
+
+header .container .menu-button {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1770px) {
+  header .container > nav {
+    gap: 30px;
+  }
+  header .container > nav li a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  header .container > nav {
+    gap: 30px;
+  }
+  header .container > nav li a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  header .container > nav {
+    gap: 20px;
+  }
+  header .container > nav li a {
+    font-size: 1.1rem;
+  }
+
+}
+
+@media (max-width: 780px) {
+  header .container img {
+    width: 80px;
+  }
+  header .container > nav {
+    gap: 20px;
+  }
+  header .container > nav li a {
+    font-size: 1rem;
+  }
+  header .container .menu-button {
+    display: flex;
+  }
+  header .container > nav {
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
+
+}
+
+/* end header */

@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", serif;
+  font-weight: 600;
+  font-style: normal;
+  overflow-x: hidden;
+  direction: rtl;
+  background-color: #def7ff;
+}
+:root {
+  --bg-color: #3ea6de;
+  --black-color: #202020;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+@media (min-width: 576px) {
+  .container {
+    width: calc(576px - 60px);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: calc(768px - 60px);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: calc(992px - 60px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: calc(1200px - 60px);
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: calc(1400px - 60px);
+  }
+}
