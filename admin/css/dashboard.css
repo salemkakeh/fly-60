@@ -1,0 +1,33 @@
+main .container {
+  padding-top: 50px;
+}
+main .container .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+main .container .cards .card {
+  background-color: #000f39;
+  color: #FFF;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+  align-items: center;
+  flex-basis: calc(200px );
+  flex-grow: 1;
+  border-radius: 10px;
+}
+main .container .cards .card i {
+  font-size: 35px;
+  color: var(--bg-color);
+}
+main .container .cards .card h1 {
+  font-size: 20px;
+}
+
+main .container .cards .card .text {
+  text-align: center;
+}
