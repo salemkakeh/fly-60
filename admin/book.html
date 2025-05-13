@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fly 60</title>
 
-    <!-- css file -->
-    <link rel="stylesheet" href="../css/style.css" />
-
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,15 +14,14 @@
     <!-- box icons library -->
     <link rel="stylesheet" href="../boxicons/css/boxicons.min.css" />
 
-    <!-- color -->
-    <link rel="stylesheet" href="../css/global.css" />
-
-    <link rel="stylesheet" href="../css/footer.css">
-
-    <link rel="stylesheet" href="../css/header.css">
-
     
-
+    <link rel="stylesheet" href="../css/global.css">
+    
+    <link rel="stylesheet" href="../css/footer.css">
+    
+    <link rel="stylesheet" href="../css/header.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
 <body>
     <!-- header -->
     <header>
@@ -33,9 +29,9 @@
 
             <nav class="nav-li">
                 <li><a href="regester.html">تسجيل دخول</a></li>
-                <li><a href="book.html">حجوزاتي</a></li>
-                <li><a href="../index.html">الرحلات</a></li>
-                <li><a href="flights.html">العروض</a></li>
+                <li><a href="../index.html">حجوزاتي</a></li>
+                <li><a href="../pages/flights.html">الرحلات</a></li>
+                <li><a href="../pages/offers.html">العروض</a></li>
             </nav>
             <input type="checkbox" id="list-2" checked>
             <label for="list-2" class="menu-button">
@@ -46,31 +42,21 @@
 
             <aside>
                 <li><a href="regester.html">تسجيل دخول</a></li>
-                <li><a href="book.html">حجوزاتي</a></li>
-                <li><a href="index.html">الرحلات</a></li>
-                <li><a href="#">العروض</a></li>
+                <li><a href="../index.html">حجوزاتي</a></li>
+                <li><a href="../pages/flights.html">الرحلات</a></li>
+                <li><a href="../pages/offers.html">العروض</a></li>
             </aside>
             <img src="../SVG/logo.svg" width="100px" alt="">
         </div>
     </header>
 
-
-    <!-- nothing -->
-    <section class="nothing">
-        <div class="container">
-          <h1>
-              لا يوجد رحلات
-          </h1>
-        </div>
-      
-      </section>
-
-    <!-- الرحلات -->
-
-    <section class="sec-flights" hidden>
+    <!-- cards -->
+     
+     
+    <section class="sec-flights" >
         <div class="container">
             <div class="text--sec1">
-                <h1> الرحلات</h1>
+                <h1> حجوزاتي</h1>
             </div>
             <div class="cards">
 
@@ -86,9 +72,7 @@
                         <span>
                             $400
                         </span>
-                        <a href="book.html">
-                            حجز
-                        </a>
+                        
                     </div>
                 </div>
 
@@ -98,15 +82,13 @@
                         فرنسا
                     </h1>
                     <p>
-                        استمتعوا بجولة في فرنسا، حيث الجمال تحتضن روائع الهندسة المعمارية والطبيعة الساحرة
+                        استمتعوا بجولة في فرنسا، حيث الجمال تحتضن روائع الهندسة المعمارية والطبيعة 
                     </p>
                     <div class="butt">
                         <span>
                             $400
                         </span>
-                        <a href="book.html">
-                            حجز
-                        </a>
+                     
                     </div>
                 </div>
 
@@ -122,68 +104,24 @@
                         <span>
                             $400
                         </span>
-                        <a href="book.html">
-                            حجز
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="../image/pexels-levent-yucelman-2296031-3969150.jpg " class="image-card" alt="">
-                    <h1>
-                        تركيا
-                    </h1>
-                    <p>
-                        في تركيا، تبدأ الرحلات بمغامرة عبر التاريخ وتنتهي بروعة الطبيعة. </p>
-                    <div class="butt">
-                        <span>
-                            $400
-                        </span>
-                        <a href="book.html">
-                            حجز
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="../image/pexels-asadphoto-1450363.jpg " class="image-card" alt="">
-                    <h1>
-                        جزر المالديف
-                    </h1>
-                    <p>
-                        عيشوا تجربة فريدة في جزر المالديف، حيث يتناغم الصفاء مع جمال الطبيعة الساحرة. </p>
-                    <div class="butt">
-                        <span>
-                            $400
-                        </span>
-                        <a href="book.html">
-                            حجز
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="../image/pexels-axp-photography-500641970-27278819.jpg " class="image-card" alt="">
-                    <h1>
-                        اسبانيا
-                    </h1>
-                    <p>
-                        استمتعوا بسحر إسبانيا، حيث تمتزج شمس المتوسط مع طاقة الفلامنكو وروعة التاريخ العريق. </p>
-                    <div class="butt">
-                        <span>
-                            $400
-                        </span>
-                        <a href="book.html">
-                            حجز
-                        </a>
+                      
                     </div>
                 </div>
             </div>
+        </section>
 
-            <button>المزيد</button>
-        </div>
-    </section>
-
+        <!-- nothing -->
+         
+        <section class="nothing" hidden>
+          <div class="container">
+            <h1>
+                لا يوجد حجوزات
+            </h1>
+          </div>
+        
+        </section>
+       
+    <!-- footer -->
 
     <footer>
         <div class="container">
@@ -200,9 +138,9 @@
                     <h1>دليل الموقع</h1>
                     <ul class="list-footer">
                         <li><a href="pages/login.html">تسجيل دخول</a></li>
-                        <li><a href="pages/book.html">حجوزاتي</a></li>
-                        <li><a href="pages/flights.html">الرحلات</a></li>
-                        <li><a href="pages/offers.html">العروض</a></li>
+                        <li><a href="../pages/book.html">حجوزاتي</a></li>
+                        <li><a href="../pages/flights.html">الرحلات</a></li>
+                        <li><a href="../pages/offers.html">العروض</a></li>
                     </ul>
 
                 </div>

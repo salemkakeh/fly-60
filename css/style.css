@@ -135,17 +135,17 @@ form::before {
 /* start main */
 
 main {
-  height: calc(100vh - 80px );
+  height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   background-image: url(../image/123123.jpg);
   background-size: cover;
-  background-position:  center;
+  background-position: center;
   position: relative;
 }
 main::after {
   position: absolute;
-  content: '';
+  content: "";
   inset: 0;
   background-color: #00000042;
   z-index: -1;
@@ -180,42 +180,38 @@ main .text p {
 
 /* end main */
 
-
 /* nothing */
 /* start nothing */
 
 .nothing {
-  height:100vh;
+  height: 100vh;
   background-color: rgb(192, 224, 252);
-
 }
-.nothing h1{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50% , -50%);
-background-color: #000f39;
-color: #fff;
-width: 100vw;
-text-align: center;
-height: 100px;
-padding: 20px;
-font-size: 30px;
+.nothing h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000f39;
+  color: #fff;
+  width: 100vw;
+  text-align: center;
+  height: 100px;
+  padding: 20px;
+  font-size: 30px;
 }
 
 /* end nothing */
 
 /* start sec-flights */
 
-
-
-.sec-flights .container .text--sec1{
+.sec-flights .container .text--sec1 {
   text-align: center;
-  padding:40px ;
+  padding: 40px;
   font-size: 30px;
 }
 
-.sec-flights .container .cards{
+.sec-flights .container .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -223,7 +219,7 @@ font-size: 30px;
   align-items: center;
 }
 
-.sec-flights .container .cards .card{
+.sec-flights .container .cards .card {
   display: flex;
   flex-direction: column;
   flex-basis: 300px;
@@ -231,87 +227,78 @@ font-size: 30px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  
 }
-
 
 @media (max-width: 768px) {
-  
-.sec-flights .container .cards .card{ 
-  flex-basis: 200px;
-  flex-grow: 1;
+  .sec-flights .container .cards .card {
+    flex-basis: 200px;
+    flex-grow: 1;
+  }
 }
-
+.sec-flights .container .cards .card img {
+  transition: transform 0.3s ease;
 }
-.sec-flights .container .cards .card img{
-  transition: transform 0.3s ease; 
-}
-.sec-flights .container .cards .card img:hover{
+.sec-flights .container .cards .card img:hover {
   transform: scale(1.1);
 }
 
-.sec-flights .container .cards .card  h1{
+.sec-flights .container .cards .card h1 {
   font-size: 2rem;
-  color:#000F39;
+  color: #000f39;
   padding: 5px;
   display: flex;
   justify-content: center;
 }
 
-.sec-flights .container .cards .card  p{
+.sec-flights .container .cards .card p {
   font-size: 15px;
   line-height: 25px;
-  padding:0 10px;
+  padding: 0 10px;
 }
 
-.sec-flights .container .cards .card .butt{
+.sec-flights .container .cards .card .butt {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding:5px;
+  padding: 5px;
 }
-.sec-flights .container .cards .card .butt span{
-  color:red;
+.sec-flights .container .cards .card .butt span {
+  color: red;
   font-size: 20px;
-  padding-right:5px;
-
+  padding-right: 5px;
 }
 
-.sec-flights .container .cards .card .butt a{
+.sec-flights .container .cards .card .butt a {
   display: flex;
   justify-content: center;
   padding: 5px;
   border-radius: 7px;
   border: none;
-  background-color:#000F39;
+  background-color: #000f39;
   color: #fff;
   font-size: 20px;
-  cursor: pointer; 
+  cursor: pointer;
   text-decoration: none;
-  
 }
-.sec-flights .container .cards .card .butt a:hover{
-  background-color:#000f39d2;
+.sec-flights .container .cards .card .butt a:hover {
+  background-color: #000f39d2;
 }
-.sec-flights .container button{
-  display:inline-block;
+.sec-flights .container button {
+  display: inline-block;
   width: 100px;
   padding: 5px;
   margin-top: 40px;
   margin-bottom: 40px;
   border-radius: 7px;
   border: none;
-  background-color:#000F39;
+  background-color: #000f39;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
-  
 }
-.sec-flights .container button:hover{
-  background-color:#000f39d2;
+.sec-flights .container button:hover {
+  background-color: #000f39d2;
 }
-
-
 
 /* end sec-flights */
 
@@ -321,57 +308,51 @@ font-size: 30px;
   padding: 10px;
   background-color: var(--bg-color);
   margin-top: 50px;
-  overflow: hidden; 
-
+  overflow: hidden;
 }
 
-.text-fly h1 { 
+.text-fly h1 {
   display: inline-block;
-  transform: translateX(100vw); 
+  transform: translateX(100vw);
   animation: scroll-text 10s linear infinite both reverse;
   white-space: nowrap;
 }
-.sec-2 .text-fly h1 span{
+.sec-2 .text-fly h1 span {
   color: white;
 }
 
 @keyframes scroll-text {
   from {
-      transform: translateX(100vw);
+    transform: translateX(100vw);
   }
   to {
-      transform: translateX(-100vw);
+    transform: translateX(-100vw);
   }
 }
-
 
 /* end sec-2 */
 
 /* start sec-3 */
 
-.sec-3 .container .cards .card .butt .price{
+.sec-3 .container .cards .card .butt .price {
   display: flex;
   justify-content: space-around;
   text-align: center;
-
-} 
-.sec-3 .container .cards .card .butt .price p{
+}
+.sec-3 .container .cards .card .butt .price p {
   font-size: 20px;
   padding: 5px;
   color: rgb(10, 180, 10);
-
 }
-.sec-3 .container .cards .card .butt .price span{
+.sec-3 .container .cards .card .butt .price span {
   text-decoration-line: line-through;
-  
 }
-
 
 /* end sec-3 */
 
 /* start sec-4 */
 
-.sec-flights .container .cards{
+.sec-flights .container .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -380,7 +361,7 @@ font-size: 30px;
   margin-bottom: 80px;
 }
 
-.sec-flights .container .cards .card{
+.sec-flights .container .cards .card {
   display: flex;
   flex-direction: column;
   flex-basis: 300px;
@@ -388,39 +369,36 @@ font-size: 30px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  
 }
-.sec-4 .container .cards .card .butt .price{
+.sec-4 .container .cards .card .butt .price {
   display: flex;
   justify-content: space-around;
   text-align: center;
-
-} 
-.sec-4 .container .cards .card .butt .price p{
+}
+.sec-4 .container .cards .card .butt .price p {
   font-size: 20px;
   padding: 5px;
   color: rgb(10, 180, 10);
-
 }
-.sec-4 .container .cards .card .butt .price span{
+.sec-4 .container .cards .card .butt .price span {
   text-decoration-line: line-through;
-  
 }
 
 /* end sec-4 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#btn {
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #000f39;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 10px #2020205f;
+}
 
